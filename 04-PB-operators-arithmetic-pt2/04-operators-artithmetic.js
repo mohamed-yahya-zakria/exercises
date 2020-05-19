@@ -1,30 +1,30 @@
-   //"use strict"; 
+   "use strict";
 
-   allTickets = 6450;
-   oneTicket = 15;
+   let allTickets = 6450;
+   let oneTicket = 15;
    console.log(allTickets / oneTicket);
 
-   weekIncome = 500;
-   NumOfweeks = 52;
-   console.log(weekIncome * NumOfweeks);
+   let weekIncome = 500;
+   let numOfWeeks = 52;
+   console.log(weekIncome * numOfWeeks);
 
-   x = 17;
-   y = 30;
-   z = 100;
+   let x = 17;
+   let y = 30;
+   let z = 100;
    console.log(' namber is ', x / y * x, '%');
 
-   perimeterSquare = 4.75;
-   primeter = 4;
+   let perimeterSquare = 4.75;
+   let primeter = 4;
    console.log(perimeterSquare / primeter);
 
-   a = 5;
-   b = 6;
-   c = 7;
-   p = (a + b + c);
+   let a = 5;
+   let b = 6;
+   let c = 7;
+   let p = (a + b + c);
    console.log(p);
 
 
-   cube = (9 * 9 * 9);
+  let cube = (9 * 9 * 9);
    console.log(cube);
 
 
