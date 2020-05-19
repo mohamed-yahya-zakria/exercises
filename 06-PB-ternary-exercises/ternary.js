@@ -1,8 +1,9 @@
 // 01
 let dog = true;
 
-(dog === true) ? console.log ('pat, pat') : console.log('find me a dog to pat!');
+let answer = dog ? ('pat, pat') : ('find me a dog to pat!');
 
+console.log(answer);
 //02
 let speedCheck = 0;
 let speedlimit = 50;
