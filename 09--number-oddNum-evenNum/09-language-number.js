@@ -27,7 +27,7 @@ console.log(typeof(answerFristNum));
 // task 03
 let chekNum = 2;
 
-let a = 30;
+let a = 136;
 let b = 939;
 let c = 90.9;
 

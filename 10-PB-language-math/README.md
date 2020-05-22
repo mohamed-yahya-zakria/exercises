@@ -24,4 +24,5 @@ Round down the following numbers: 3321.32321, 326.76, 76788.7, -9.78, 28.329.
 
 ## 3. Dice Roll!
 
-Create a program that prints a random **_integer_** from 1 - 6.
+Create a program that prints a random **_integer_** from 1 - 6.AND dont print zero (0)
+
