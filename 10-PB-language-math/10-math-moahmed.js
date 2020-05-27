@@ -49,10 +49,10 @@ console.log(Math.floor(c, d, e, f, g, h)); */
  let num = z === 0 ? (z + 1) : (z);
  console.log(num)
 
-/* 1-we declared Random value (x)by default is [0:1]
+/* 1-we declared Random value (x)by default is from 0.000000   to 0:999999999999
 2-we mulitplicated at 6,as a needs Exercise.
 3-we used methoud around that we get wohle number for result of arounded Number 
 4-we use ternary methoud make the condition (if the value of arounded NUm has zero add one or print the value) */
 
-
+console.log (typeof(defined));
 

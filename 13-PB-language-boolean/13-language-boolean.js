@@ -5,15 +5,15 @@
 let y = "3"; */
 console.log(3 == "3");
 console.log(3 === "3");
-// loose comparison is compare just value of variable
+// loose comparison is compare just value of variable to convert the type you can use Stribg(), Number(), Boolean() is funcation are converter
+ 
 
-// strict comparison is compare type and vlaue
+ //Is there a difference? Why/why not?
 
-/* acually  i dont understand this part
-answers in the js file.** 
-* Is there a difference? Why/why not? 
-* Which comparison operator should we generally use? Why?
-* What would happen if we were to use `=`? */
+//answer
+
+// the differnt loose comparison == & strict comparison === ? is == is comparese just the value but strict comparison is comapare value and type
+
 
 //task 02
 let myValue = true;
