@@ -27,18 +27,43 @@ if (b < c && c > a) {
 } else {
     console.log(`false`)
 }
+a = 60;
+b = 50;
+c = 20;
 
-//task 04 
+if (Math.max(a, b, c) === a) {
+    console.log(a);
+}
+
+if (Math.max(a, b, c) === b) {
+    console.log(b);
+}
+
+//4. Create a new string adding "Py" in front of a given string. If the given string begins with "Py" then print the original string.
+// It is a pretty confusing question...
+
+let myString = "Hello World";
+let newString = "Py" + myString;
+
+if (newString[0] + newString[1] === "Py") {
+    console.log(myString);
+}
+
+//task 04 // includ.methoud just chech for frist letter.we need for wohle the sentence
 let txt1 = `PYthon`;
 if (txt1.includes(`PY`)) {
     console.log(`the original string`);
 } else {
     console.log(`it is not the original string`);
 }
+//6. Check whether the sum of two integers is 8, or whether their difference is 8. If one of these is the case, print true.
 
+if ((mySum === 8) || (myNum1 - myNum2 === 8)) {
+    console.log(true);
+}
 // task 6 
-let num1 = 3;
-let num2 = 5;
+let num1 = 8;
+let num2 = 8;
 
 if (num1 + num2 === 8 || num1 - num2 === 8) {
     console.log(`true`)
@@ -52,6 +77,7 @@ if (num1 == num2 === 15 || num1 + num2 === 15) {
     console.log(`false`)
 }
 //task 08
+
 if (num1 % 7 == 0 || num1 % 11 == 0 || num2 % 7 == 0 || num2 % 11 == 0) {
     console.log(`true`)
 } else {
