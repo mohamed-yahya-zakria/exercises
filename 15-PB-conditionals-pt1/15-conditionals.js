@@ -62,20 +62,29 @@ if (num1 % 7 == 0 || num1 % 11 == 0 || num2 % 7 == 0 || num2 % 11 == 0) {
 let num4 = (num1 + num2);
 if (num1 + num2 == num4) {
     console.log(num4 + num1 + num2);
-}
-else {
+} else {
     console.log(`false`);
 }
 //task 10
-let num6 = 5 ;
+let num6 = 5;
 let spacNum = (num6 - 19);
 if (spacNum > 19) {
     console.log(spacNum * 2);
-}
-else {
+} else {
     console.log(`false`);
 }
 // task 11
-
-
-
+let fristName = `mohamed`;
+let age = `70`;
+if (age > 13) {
+    console.log(`mohamed is chiled`);
+}
+ifelse(13 < age < 20) {
+    console.log(`mohamed is a teenager`)
+}
+ifelse(20 < age < 30) {
+    console.log(`mohamed is a young adult`);
+}
+else {
+    console.log(`mohamed is a adult`);
+}
