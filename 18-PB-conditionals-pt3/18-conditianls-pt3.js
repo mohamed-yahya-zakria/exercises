@@ -1,8 +1,8 @@
 "use strict";
 
-let aleezaTeam = (9 + 120 + 103 / 3);
-let lisTeam = (116 + 94 + 1 / 3);
-let maryTeam = (9700 + 134 + 105 / 3);
+let aleezaTeam = (9 + 120 + 103) / 3;
+let lisTeam = (116 + 94 + 1 ) /3;
+let maryTeam = (9700 + 134 + 105)/3;
 if (aleezaTeam > lisTeam) {
     console.log(`highest average score is ${aleezaTeam} Aleeza team`);
 } else if (aleezaTeam === lisTeam) {
