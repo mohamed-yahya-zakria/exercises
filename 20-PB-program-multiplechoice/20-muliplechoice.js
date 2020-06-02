@@ -41,36 +41,21 @@ switch (fruits) {
     default:
         console.log(`we don't have any more fruits sorry Sir`);
 }
-
-
-
-
-/* let daysInThisMonth = null;
-month = 2; 
-// i think this is beautiful :D 
-// reducing the cases for our purposes 
-// chunk them together like this! 
-switch (month) {
-    case 1: // january
-    case 3: // march 
-    case 5: // may
-    case 7: // july
-    case 8: // august
-    case 10: // october
-    case 12: // december
-        daysInThisMonth = 31;
-        break; // MUST HAVE FOR ALL THE CASES NORMALLY 
-    case 2:
-        daysInThisMonth = 28;
-        break;
-    case 4: // april
-    case 6: // june
-    case 9: // september
-    case 11: // november
-        daysInThisMonth = 30;
-        break;
-    default: // standard case, backup, it MUST be there, should be at the end! 
-        console.log("Its an error case! Something went wrong"); // 13  
-        // doesn't need a break because its the last one!  
+ //04
+let percentageComplete = 30;
+if (percentageComplete === 30) {
+    console.log(`Still a long way to go`);
 }
-console.log(`The month number ${month} has ${daysInThisMonth} days per month!`); */
+else if (30 <= percentageComplete <= 50 ){
+    console.log(`Still a long way to go`);
+}
+else if (51 <= percentageComplete <= 80 ){
+    console.log(`You can do it!`);
+}
+else if (81 <= percentageComplete <= 99 ){
+        console.log(`This is the last push!`);
+}
+else if (percentageComplete === 100){
+    console.log(`You're there. Well done!`);
+}
+/*  I use if or else if statment to check for bigger than // smaller than but switch does't work for that but we can use switch for when we make check app like check for monthes or check for color ..etc */
