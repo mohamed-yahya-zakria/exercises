@@ -59,3 +59,33 @@ else if (percentageComplete === 100){
     console.log(`You're there. Well done!`);
 }
 /*  I use if or else if statment to check for bigger than // smaller than but switch does't work for that but we can use switch for when we make check app like check for monthes or check for color ..etc */
+
+let x = 35;
+switch (x) {
+    case 30:  
+    if (30 <= x <= 50 )
+      { let y = 'Still a long way to gooooo';
+        console.log (y);
+    }
+}
+
+/* 
+let myMonth = "January";
+switch (myMonth) { // one expression only, one condition only 
+    case "January": // logical OR 
+    case "February":
+        if (myMonth === "January") { 
+            // block scope
+            let message = "Hello winter!";
+            console.log(message);
+        }
+        // console.log(message); not available outside
+        console.log("This is the first or second month of the year");
+        break;
+    case "March":
+        console.log("This is the third month of the year");
+        break;
+    case "April":
+        console.log("This is the fourth month of the year");
+        break;
+    case "May": */
