@@ -1,21 +1,26 @@
+'use strict';
 
 
-
-
-// comment ! i dont kmow why dont took the left space // 
 let space = '';
-for (let i = 10; i >= 1; i--){
-    space ='';
-    for (let p = i; p < 10; p++){
-        space+='p'; // result = pppppppp
+for (let i = 10; i >= 1; i--){ // 10 > 9 > 8 > 7....
+    space = ''; // very itration restarted from empty string
+    
+    
+    for (let p = i; p < 10; p++){  
+          
+        space+= ' ';// space = space + p +1  // space = 
+        
+        //p = 9 +  , p>10, p++
+
+         // result = pppppppp
          // very important thing that you should make space between the single brackts,it was my mistak
     }
-    for (let k = 0; k < (i * 2) -1; k++){
-        space += '*';
+    for (let k = 0; k < (i * 2) -1; k++){//first itiration = 19*
+         space += '*';
     }
-    for (let h = i; p < 10; p++){
-        space+='p'; 
-    }
+   /*  for (let b = i; b < 10; b++){
+        space+='b'; 
+    } */
     console.log(space);
 }
 
