@@ -22,20 +22,12 @@ const myFuncation2 = (x, y) => {
 }
 myFuncation2(3, 5);
 
-//03
 
-/* const myFuncation3 = (x, y) => {
-    y = 4;
-    let count = 0;
-    let num = (y * 2);
-  while (num  count +=2;) {
-     
-  }
-  //console.log()
-}
-myFuncation3(2, 8); */
+
+
 
 //2. Fruits
+
  // 01
 let myFruits = 'mango, banana, appel';
  const favoriteFruit = (fruit) => {
@@ -43,3 +35,9 @@ let myFruits = 'mango, banana, appel';
     console.log(myFruits);
  }
  favoriteFruit(myFruits);
+ //02
+ const multipliedFlunlctionItslef = (x, y) => {
+    let muliPItslef = (x ** y);
+    console.log(muliPItslef);
+}
+multipliedFlunlctionItslef(2, 3);
