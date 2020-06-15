@@ -1,60 +1,78 @@
    "use strict";
 
-   let allTickets = 6450;
-   let oneTicket = 15;
-   console.log(allTickets / oneTicket);
 
-   let weekIncome = 500;
-   let numOfWeeks = 52;
-   console.log(weekIncome * numOfWeeks);
+// Q1. 
+let allMoney = 6450;
+let ticketCost = 15;
+let ticketNum = 6450 / 15;
+console.log(ticketNum + ' tickets');
 
-   let x = 17;
-   let y = 30;
-   let z = 100;
-   console.log(' namber is ', x / y * x, '%');
-
-   let perimeterSquare = 4.75;
-   let primeter = 4;
-   console.log(perimeterSquare / primeter);
-
-   let a = 5;
-   let b = 6;
-   let c = 7;
-   let p = (a + b + c);
-   console.log(p);
+// Q2.
+//verteilein pro week
+let incomePerWeek = 500;
+let incomePerYear = incomePerWeek * 52;
+console.log('Sylvia\'s\ income per year is ' + incomePerYear + ' dollars');
 
 
-  let cube = (9 * 9 * 9);
-   console.log(cube);
+// Q3 
+//percentage of 17/30. 
+let percentage = 17 / 30 * 100;
+console.log(percentage + '%');
 
+// Q4.square. Assume each side is 4.75cm.
 
+let squareSide = 4.75;
+let perimeter = squareSide * 4;
+console.log(perimeter + 'cm');
 
+// Q5. perimeter of a triangle. Assume 
+let sideA = 5;
+let sideB = 6;
+let sideC = 7;
+let trianglePerimeter = sideA + sideB + sideC;
+console.log(trianglePerimeter + 'cm');
 
-   side = 5;
-   numSide = 4;
-   console.log(side * numSide);
+// Q6. Calculate the area of a square. Each side is 5cm
+let squareSideB = 5;
+let squareArea = squareSideB ** 2;
+console.log(squareArea + ' square meters');
 
-   x = 22.35 + .10 * 100;
-   y = 26.67 + .15 * 100;
-   d = 35.92 + .20 * 100;
+// Q7 . Calculate the area of a triangle. Assume the length of the sides are 5cm, 6cm, 7cm..
+let sideA = 5;
+let sideB = 6;
+let sideC = 7;
+let trianglePerimeter = sideA + sideB + sideC;
 
-   z = (x + y + d);
+let s = trianglePerimeter / 2;
+let triangleArea = Math.sqrt(s * ((s - sideA) * (s - sideB) * (s - sideC)));
+console.log(triangleArea + ' square meters');
 
+// Q8.Q8. Calculate the volume of a cube. Length of each side is 9cm.
+let cubeSide = 9;
+let cubeVolume = cubeSide ** 3;
+console.log('the volume of the cube is: '+ cubeVolume);
 
-   numHour = (8 + 6 + 5 + 9 + 8 + 2 + 1);
-   numberOfX = 10;
+// Q9.
+let billA = 22.35
+billA += billA * 10 / 100;
+console.log(billA + ' Euros');
+let billB = 26.67;
+billB += billB * 15 / 100;
+console.log(billB + ' Euros');
+let billC = 35.92;
+billC += billC * 20 / 100;
+console.log(billC + ' Euros');
 
-   console.log(numHour / numberOfX);
+// Q10.
+let averageHours = (8 + 6 + 5 + 9 + 8 + 2 + 1 + 8.5 + 7 + 4) / 10;
+console.log('Noemy\'s\ average hours per day: ' + averageHours);
 
-   scored = (75 + 70 + 85 + 90 + 100);
-   num = 5;
-   average5 = (scored / num);
-   averageTest6 = 85;
-   console.log(average5 + averageTest6);
+// Q11.
+let averageAfter = 85 * 6 - 75 - 70 - 85 - 90 - 100;
+console.log('score in the sixth test: ' + averageAfter);
 
-   // acully i dont undrstand the question
-
-   // 12 
-   x = 78 * 8;
-   y = 80 * 9;
-   console.log(x * y);
+//Q12. 
+let averageNow = 78 * 8;
+let averageMust = 80 * 9;
+let minimum = averageMust - averageNow;
+console.log('james needs a minimum of ' + minimum + '%'); 

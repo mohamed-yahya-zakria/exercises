@@ -1,13 +1,14 @@
 "uas strict";
 
-// task 01
+// task A b 01 min and max numbers
 let a = (Math.min(-1, 0, 1, 2, 3, 4));
 console.log(a);
 
 let b = (Math.max(-1, 0, 1, 2, 3, 4));
 console.log(b);
 
-//02-A round up 
+
+//02-A round up round up round up 
 let c = (Math.ceil(3321));
 let d = (Math.ceil(32321));
 let e = (Math.ceil(326.76));
@@ -38,9 +39,9 @@ console.log(Math.ceil(c, d, e, f, g, h));
 
 console.log(Math.floor(c, d, e, f, g, h)); */
 
-//03 --
+//03 -- Dice Roll!
 
- let x = (Math.random());
+ let x = (Math.random());//[0 :.999999]
  let y = x * 6;
  console.log(y); 
  let z = Math.round(y);

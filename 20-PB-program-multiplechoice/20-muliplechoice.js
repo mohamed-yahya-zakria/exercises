@@ -46,8 +46,8 @@ let gradeGenerator = Math.round(Math.random() * 5 + 1);
 
 B-program-multiplechoice/20-daniel.js 
 Viewed
-@@ -0,0 +1,105 @@
-"use strict;";
+
+
 
 // 1. *** Create a switch statement that prints a different statement for each color possibility (red, blue, green, yellow).
 
@@ -68,11 +68,7 @@ switch (inputColor) {
     console.log("1:", "\x1b[33mThis is yellow\x1b[0m");
     break; // unnecessary
   // no default needed in this configuration
- @Ungoot
-Ungoot 31 minutes ago Member
-I would include a default anyway, what if someone adds something else to the array later (they can't because it's a const but what if they change what inputColor gets it's data from).
 
-@mohamed-yahya-zakria	Reply…
 }
 
 // 2. *** Create a switch statement that prints different comments depending on a grade.
