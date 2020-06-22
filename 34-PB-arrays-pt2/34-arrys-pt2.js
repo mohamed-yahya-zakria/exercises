@@ -1,5 +1,7 @@
 'use strict';
+
 //task 01
+console.log('task 01');
 const findGreatest = (myArray, number) => {
   let greaterNum = '';
   for (i = 0; i <= myArray.length; i++) {
