@@ -61,5 +61,27 @@ function Capitalize(arr) {
     }
     return result
 }
-
 console.log(Capitalize(["matt", "sara", "lara"]));
+// task 6
+function unique(arr) {
+    //let intializer = null;
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length <= arr[i].length) {
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+
+console.log(unique([3, 3, 3, 7, 3, 3, 4, 4])); // ➞ 7
+console.log(unique([0, 0, 0.77, 0, 0])); // ➞ 0.77
+
+// task 7 
+const repeat =  (arr) => {
+ let result = [];
+  result.push( arr[0].repeat(arr[1])) 
+  
+  return result
+ }
+ console.log(repeat(["example", 3]));
