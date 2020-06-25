@@ -1,87 +1,109 @@
 'use strict';
 
 //task 01
-
-
 function sumOfNumber(num) {
-    let sum = null;
+    let sum = null; // should null or zero to cconsider that (+) arithmetical process  
     for (let i = 0; i < num.length; i++) {
         sum += num[i]
-
     }
     return sum
 }
 console.log(sumOfNumber([1, 2, 3]));
-//task 02
-const helloGuys = (arr) => {
-    let result = [];
-
-    for (let i = 0; i < arr.length; i++) {
-        result.push('hello ' + arr[i])
-
+//task 01
+function sumOfNumber2 (arr) {
+    let intializer  = 0;
+    for (let num of arr) { //instead i =o; i<arr.length; i++
+        intializer += parseFloat(num)
     }
-    return result
+    return intializer+ '\b'+ 'the result if we add up ' + arr + 'together\n'
 }
-console.log(helloGuys(['marc', 'mike', 'muller', 'sarah']));
+console.log(sumOfNumber2([1, 2, 3]));
+//task 02
+let names = ['marc', 'mike', 'muller', 'sarah'];
+for (let i = 0; i < names.length; i++)
+    console.log(` hello ${names[i]}  !`)
+
+
 //task 03
-const Cities = ["Paris", "London", "Valletta", "Prague", "Rome"]
+const Cities = ["Paris", "London", "Valletta", "Prague", "Rome"];
 
 console.log(Cities.unshift("Berlin"));
 console.log(Cities);
-//task 04
-function OddsGiveOne(arr) {
-    let result = [];
-    for (let i = 0; i < arr.length; i++) {
-        let x = arr[i]
 
-        if (x % 0 !== 0) {
-            result.push(x + 1)
-            //result.push(x.parseInt()+1)
+//task 3 should be tring this is manualy
+const cities2 = ["Paris", "London", "Valletta", "Prague", "Rome"];
+let string = 'berl';
+for (let i = 0; i < cities2.length; i++) {
+    string+= cities2[i] + ', ';
+} string =string.substring(0, string.length -2);
+// we wrote -2 to remove the last (,) during print
+console.log('city name is:', string  + ' ');
+
+//task 04
+function OddsGiveOne(array) {
+    let result = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2== 0) {
+            result.push(array[i] -1)
         } else {
-            result.push(x - 1)
-            //result.push(x.parseInt()-1)
+            result.push(array[i] +1)
         }
     }
     return result
 }
-console.log(OddsGiveOne([1, 2, 3]));
+console.log(OddsGiveOne([3, 5, 2, 4]));
 
 //console.log();
 // task 05
 function Capitalize(arr) {
     let result = [];
-    arr = arr.split('');
-
-    for (let i = 0; i < arr.length; i++) {
-        let index = 0
-        let myarr = arr[i].length.charAt(index).toUpperCase();
-        myarr.join("")
-        result.push(myarr)
-        //result.push() 
+    for(let i =0; i<arr.length; i++){
+        result.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase());
+        // slice (1) it's mean cut the frist index and contineu to the end elements
     }
-    return result
+    return result;
 }
-console.log(Capitalize(["matt", "sara", "lara"]));
-// task 6
-function unique(arr) {
-    //let intializer = null;
-    let result = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].length <= arr[i].length) {
-            result.push(arr[i])
+
+console.log(Capitalize(["matt", "sara", "Hara"]));
+
+//task /good way/ // task 6
+
+function noDuplicates(array) {
+    let newArray = array;
+    for (let i = 0; i < array.length; i++) {
+        if (newArray.indexOf(newArray[i]) !== newArray.lastIndexOf(newArray[i])) {
+            newArray.splice(i, 1);
+            i = 0;
         }
     }
-    return result
+    return newArray;
 }
-
-console.log(unique([3, 3, 3, 7, 3, 3, 4, 4])); // ➞ 7
-console.log(unique([0, 0, 0.77, 0, 0])); // ➞ 0.77
-
+console.log(noDuplicates([1, 4, 4, 7, 7, 7]));
+console.log(noDuplicates([1, 6, 6, 6, 9, 9]));
+console.log(noDuplicates([2, 2, 2, 2, 2, 2]));
+console.log(noDuplicates([5, 10, 15, 20, 25]));
+/// task 6
+function noDuplicates(array) {
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (newArray.indexOf(array[i]) === -1) {
+            // we don't have it already and -1 mens unditifind in arry
+            newArray.push(array[i]);
+            // we push it once!
+        }
+    }
+    return newArray;
+}
+console.log(noDuplicates([1, 6, 6, 9, 9])); // ➞ [1, 6, 9]
+console.log(noDuplicates([2, 2, 2, 2, 2, 2])); // ➞ [2]
+console.log(noDuplicates([5, 10, 15, 20, 25])); // ➞ [5, 10, 15, 20, 25]
 // task 7 
-const repeat =  (arr) => {
- let result = [];
-  result.push( arr[0].repeat(arr[1])) 
-  
-  return result
- }
- console.log(repeat(["example", 3]));
+
+const repeat = (str, num) => {
+    let result = [];
+    for (let i = 0; i < num; i++) {
+        result.push(str);
+    }
+    return result;
+}
+console.log(repeat("example", 3));
