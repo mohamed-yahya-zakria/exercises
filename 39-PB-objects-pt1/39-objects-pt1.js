@@ -88,11 +88,13 @@ console.log(properties(student));
    // console.log(first);
    let result = {}
    for( const item in obj1){
-       //the itrator item = key 
+       //the itrator item = key = wohle object 
        // nameOFObject [key] => value
    // console.log('this is item',item);
 
-     result[item] = obj1[item] // john = john
+     result[item +'mohamed'] =  obj1[item] // (=) it's means assignment 
+     //  result[item] =  obj1[item] means key = value but when you print result[item] lonly you dont get the key because you have't (=) ,should we have = to find the key and value like that result[item] =  obj1[item]
+     console.log(' reslut = ',result)
      console.log('item',item);
      console.log('result[item] =', result[item] );
      console.log(' first[item] =', first[item] );
@@ -134,15 +136,21 @@ console.log(x(myObj));
 
 // bonus NR 5 i dont understand
 const KeysValues = (obj6) => {
-    const resultArray = new Array(2);
-   // console.log('new Array(2)',new Array(2));
-    resultArray[0] = Object.keys(obj6);
-    resultArray[1] = Object.values(obj6);
+    const resultArray = new Array();
+   // console.log('new Array(2)',new Array(2)); it's means make new array with items
+   console.log(resultArray);
+    resultArray[0] = Object.keys(obj6);//resultArray[0] make the frist arrray
+    console.log(resultArray);
+    resultArray[1] = Object.values(obj6); //resultArray[1] make the scond arrray
+    resultArray[2] = Object.values(obj6); //resultArray[2] make the third arrray
+    resultArray[3] = Object.values(obj6);
     return resultArray;
 }
 console.log('bonus 5', KeysValues({
     a: 1,
     b: 2,
-    c: 3
+    c: 3,
+    d:4,
+    f:5
 }));
  
